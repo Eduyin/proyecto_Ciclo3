@@ -5,57 +5,54 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" >
     </head>
     <body >
-
-
-        <ul class="list-group" >
-            
-            <li class="list-group-item" style="border: white">
-                <div class="btn-group dropend" >
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" 
-                    aria-expanded="true" style="width: 150px ; height: 50px;   background-color:white;border:white" value="dropdown-dark-link-color: black" >
-                      <font color=#58bbae face="verdana" size=5>Ventas</font>
-                    </button>
-                    <ul class="dropdown-menu" style="padding: 10px">
-                        <li><a href="ingresarVentas.html" target="col_mitad" style="text-decoration: none; "><font color="black">Ingresar</font></a></li><br>
-                        <li><a href="actualizarVentas.html" target="col_mitad" style="text-decoration: none; "><font color="black">Actualizar</font></a></li><br><!-- Dropdown menu links -->
-
-                    </ul>
-                   
-                  </div>
-            </li>
-            <li class="list-group-item" style="border: white">
+      <div class="list-group">
+        <button type="button" class="list-group-item-action" aria-current="true"
+            style="background-color: #58bbae; border: #58bbae; color:#ffffff; text-align:center">
+            MENÚ
+        </button>
+    </div>
+    <br>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-sm" style="background-color: #58bbae; border:#58bbae; width:300px; text-align: left;" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Gestión de Usuarios
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="modulo_gestion_usuarios/tipos_identificacion_usuarios/lista_tipos_identificacion_usuarios.html"
+                        target="col_mitad" class="dropdown-item" aaria-current="true"
+                        style="background-color: #ffffff; border: #58bbae;">Tipos de Identificación Usuarios</a></li>
+                <li><a href="modulo_gestion_usuarios/roles/lista_roles.html" target="col_mitad" class="dropdown-item"
+                        aaria-current="true" style="background-color: #ffffff; border: #58bbae;">Roles</a></li>
+                <li><a href="modulo_gestion_usuarios/usuarios/lista_usuarios.html" target="col_mitad"
+                        class="dropdown-item" aaria-current="true"
+                        style="background-color: #ffffff; border: #58bbae;">Usuarios</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-sm" style="background-color: #58bbae; border:#58bbae; width:300px; text-align: left" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Administrador de Productos
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="modulo_administrador_productos/registrar_productos.html" target="col_mitad" class="dropdown-item" aaria-current="true"
+                        style="background-color: #ffffff; border: #58bbae;">Registrar Productos</a></li>
+                <li><a href="modulo_administrador_productos/gestionar_productos.html" target="col_mitad" class="dropdown-item" aaria-current="true"
+                        style="background-color: #ffffff; border: #58bbae;">Gestionar Productos</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-sm" style="background-color: #58bbae; border:#58bbae; width:300px; text-align: left" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Administrador de Ventas
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="registrarVentas.html" target="col_mitad" class="dropdown-item" aaria-current="true"
+                        style="background-color: #ffffff; border: #58bbae;">Registrar Ventas</a></li>
+                <li><a href="actualizarVentas.html" target="col_mitad" class="dropdown-item" aaria-current="true"
+                        style="background-color: #ffffff; border: #58bbae;">Actualizar Ventas</a></li>
                 
-                    <div class="btn-group dropend" >
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" 
-                        aria-expanded="true" style="width: 150px ; height: 50px;  background-color:white;border:white" value="dropdown-dark-link-color: black" >
-                          <font color="#58bbae" face="verdana" size=5>Productos</font>
-                        </button>
-                        <ul class="dropdown-menu" style="padding: 10px">
-                            <li><a href="usuarios.html" target="col_mitad" style="text-decoration: none; "><font color="black">interfaz1</font></a></li><br>
-                            <li><a href="ventas.html" target="col_mitad" style="text-decoration: none; "><font color="black">interfaz2</font></a></li><br>
-                            <li><a href="productos.html" target="col_mitad" style="text-decoration: none; "><font color="black">interfaz3</font></a></li><br><!-- Dropdown menu links -->
-                        </ul>
-                       
-                      </div>
-            </li>
-            <li class="list-group-item" style="border: white">
-                
-                    <div class="btn-group dropend" >
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" 
-                        aria-expanded="true" style="width: 150px ; height: 50px; background-color:white;border:white" value="dropdown-dark-link-color: black" >
-                          <font color="#58bbae" face="verdana" size=5>Usuarios</font>
-                        </button>
-                        <ul class="dropdown-menu" style="padding: 10px">
-                            <li><a href="usuarios.html" target="col_mitad" style="text-decoration: none; "><font color="black">interfaz1</font></a></li><br>
-                            <li><a href="ventas.html" target="col_mitad" style="text-decoration: none; "><font color="black">interfaz2</font></a></li><br>
-                            <li><a href="productos.html" target="col_mitad" style="text-decoration: none; "><font color="black">interfaz3</font></a></li><br><!-- Dropdown menu links -->
-                        </ul>
-                       
-                      </div>
-            </li>
-           
-          </ul>
-       
+            </ul>
+        </div>
+
         
         
     </body>
